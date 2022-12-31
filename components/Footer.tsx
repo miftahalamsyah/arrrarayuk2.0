@@ -13,9 +13,7 @@ export const Footer: NextPage = () => {
     <footer className="footer">
       <div className="footer_copyright">
         <p className="footer_copyright_textOne">arrarayuk 2.0</p>
-      </div>
-      <div className="footer_socialMedia">
-        <p className="footer_copyright_textOne">Belajar Array Online ✨ </p>
+          <p className="footer_copyright_textOne">Belajar Array Online ✨ </p>
       </div>
     </footer>
   );

@@ -120,6 +120,11 @@ export const Contact: NextPage<IContactProps> = ({ theme }) => {
         <p>😊 Eitsss.... Gimana udah main gamenya, yuk coba selesaikan soal-soal berikut! 😊</p>
       </div>
       <iframe className="embed" src="https://evaluasiarrarayuk.vercel.app/" width="485" height="402" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+      <div className="contact_email">
+        <p>😊 Ehhh coba lagi yang ini! Biar makin pinter 😊</p>
+      </div>
+          <iframe className="embed" title="Evaluasi Materi Array - Kelompok 10" frameBorder="0" width="1200px" height="675px"
+                  src="https://view.genial.ly/63b00ea3007b600012a014ef"></iframe>
     </>
   );
 };

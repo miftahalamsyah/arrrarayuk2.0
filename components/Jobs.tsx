@@ -16,7 +16,13 @@ export const Jobs: NextPage<IJobsProps> = ({ jobs }) => {
             <h3>3.8.1 Menjelaskan array satu dimensi</h3>
           </div>
           <div className="job">
-              <h3>3.8.2 Menerapkan array satu dimensi</h3>
+              <h3>3.8.2 Menjelaskan array multidimensi</h3>
+          </div>
+          <div className="job">
+              <h3>3.8.3 Mengidentifikasi konsep array satu dimensi</h3>
+          </div>
+          <div className="job">
+              <h3>3.8.4 Mengidentifikasi konsep array multidimensi</h3>
           </div>
       </div>
     </>

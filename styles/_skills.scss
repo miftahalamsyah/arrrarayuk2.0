@@ -21,6 +21,22 @@
     }
   }
 
+  &_email2 {
+    @include flexSettings(row, center, center);
+    @include sectionLayout(15px, var(--secondary-background-two));
+    @include borderWithRadius(1px solid var(--box), 10px);
+    box-shadow: 1px 3px 6px -2px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto auto 30px auto;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--main-text-color);
+    img {
+      @include imageSize(30px, 30px, contain);
+      margin-right: 15px;
+    }
+  }
+
   &_box {
     @include flexSettings(column, center, center);
     flex-wrap: wrap;
