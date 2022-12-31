@@ -119,6 +119,7 @@ export const Contact: NextPage<IContactProps> = ({ theme }) => {
       <div className="contact_email">
         <p>😊 Eitsss.... Gimana udah main gamenya, yuk coba selesaikan soal-soal berikut! 😊</p>
       </div>
+      <iframe className="embed" src="https://evaluasiarrarayuk.vercel.app/" width="485" height="402" frameBorder="0" scrolling="no" allowFullScreen></iframe>
     </>
   );
 };
