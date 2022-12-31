@@ -1,0 +1,98 @@
+.contact {
+  @include sectionLayout(40px 25px, var(--background-two));
+
+  &_heading {
+    @include headingLayout(36px, center, 50px, var(--main-text-color));
+  }
+
+  &_email {
+    @include flexSettings(row, center, center);
+    @include sectionLayout(15px, var(--secondary-background-two));
+    @include borderWithRadius(1px solid var(--box), 10px);
+    box-shadow: 1px 3px 6px -2px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto auto 30px auto;
+    border-radius: 8px;
+    word-break: break-all;
+    color: var(--main-text-color);
+    img {
+      @include imageSize(30px, 30px, contain);
+      margin-right: 15px;
+    }
+  }
+
+  &_form {
+    @include flexSettings(column, center, center);
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+    padding: 0 20px;
+
+    &_formcontrol {
+      @include flexSettings(column, center, center);
+      margin-top: 25px;
+      width: 100%;
+
+      &_label {
+        margin-bottom: 5px;
+        font-size: 18px;
+        align-self: flex-start;
+        color: var(--main-text-color);
+      }
+
+      &_input {
+        @include sectionLayout(12px, var(--secondary-background-two));
+        @include borderWithRadius(1px solid var(--box), 10px);
+        box-shadow: 1px 3px 6px -2px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 5px;
+        color: var(--main-text-color);
+      }
+
+      &_error {
+        font-size: 14px;
+        font-weight: 500;
+        color: red;
+        align-self: flex-start;
+      }
+
+      &_submit {
+        @include sectionLayout(10px 30px, var(--secondary-background-one));
+        @include borderWithRadius(1px solid var(--box), 10px);
+        box-shadow: 1px 3px 6px -2px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        outline: none;
+        color: #ffffff;
+        font-size: 18px;
+        cursor: pointer;
+        max-width: 120px;
+        margin-top: 5px;
+      }
+
+      &_submit:hover {
+        background-color: #f0f0f0;
+        color: #2C3A41;
+      }
+    }
+  }
+
+  &_submission {
+    @include flexSettings(column, center, center);
+    color: var(--main-text-color);
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 150px auto 100px auto;
+    padding: 0 20px;
+    text-align: center;
+
+    &_head {
+      font-size: 22px;
+    }
+
+    &_text {
+      font-size: 18px;
+    }
+  }
+}

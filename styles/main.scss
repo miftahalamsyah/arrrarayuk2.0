@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Circular Std;
+  src: url("../assets/CircularStd-Book.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Circular Std";
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main{
+  background: var(--background-one);
+}
+
+:root {
+  --toastify-toast-width: 265px;
+  --toastify-toast-min-height: 80px;
+  --toastify-font-family: "Circular Std";
+
+  --background-one: #FFFFFF;
+  --background-two: #FFFFFF;
+  --background-three: #202020;
+  --secondary-background-one: #202020;
+  --secondary-background-two: #ffffff;
+  --main-text-color: #202020;
+  --text-color-one: #202020;
+  --text-color-two: #6b7688;
+  --text-color-three: #ffffff;
+  --border-one: #e2e6ec;
+  --border-two: #202020;
+  --about-profilepic-one: #202020;
+  --about-profilepic-two: #303030;
+  --jobs-jobcard-background: #ffffff;
+  --skills-card-border: #ffffff;
+  --skills-card-shadow: #6b7688;
+  --box: #f0f0f0;
+}
+
+[data-theme="dark"] {
+  --background-one: #263238;
+  --background-two: #263238;
+  --background-three: #263238;
+  --secondary-background-one: #2C3A41;
+  --secondary-background-two: #2C3A41;
+  --main-text-color: #ffffff;
+  --text-color-one: #ffffff;
+  --text-color-two: #929397;
+  --text-color-three: #ffffff;
+  --border-one: #929397;
+  --border-two: #929397;
+  --about-profilepic-one: #222A2F;
+  --about-profilepic-two: #222A2F;
+  --jobs-jobcard-background: #191919;
+  --skills-card-border: #6b7688;
+  --skills-card-shadow: #ffffff;
+  --box: #202020;
+}
+
+@mixin imageSize($width, $height, $fit) {
+  width: $width;
+  height: $height;
+  object-fit: $fit;
+}
+
+@mixin flexSettings($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin sectionLayout($padding, $background) {
+  background-color: $background;
+  padding: $padding;
+}
+
+@mixin headingLayout($fontSize, $textAlign, $marginBottom, $color) {
+  font-size: $fontSize;
+  text-align: $textAlign;
+  margin-bottom: $marginBottom;
+  color: $color;
+}
+
+@mixin borderWithRadius($border, $borderRadius) {
+  border: $border;
+  border-radius: $borderRadius;
+}
+
+@mixin colorWithBackground($color, $backgroundColor) {
+  color: $color;
+  background-color: $backgroundColor;
+}
+
+@mixin navBar($backgroundColor){
+  background-color: $backgroundColor;
+}
+
+@mixin lineTransform($top, $transform) {
+  top: $top;
+  transform: $transform;
+}
+
+.scroll-up {
+  @include imageSize(45px, 45px, contain);
+  @include borderWithRadius(2px solid #707070, 50%);
+  padding: 8px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@import "./navbar";
+@import "./about";
+@import "./jobs";
+@import "./projects";
+@import "./skills";
+@import "./contact";
+@import "./footer";
